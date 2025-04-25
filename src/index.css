@@ -1,0 +1,266 @@
+:root {
+  --font-base: 'Inter', sans-serif;
+  --color-text: #11305A;
+  --color-bg: #ffffff;
+  --color-primary: #11305A;
+  --color-secondary: #832FA5;
+  --gradient: linear-gradient(to bottom, var(--color-secondary), var(--color-primary));
+}
+
+html {
+  width: 100%;
+}
+
+body {
+  font-family: var(--font-base);
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.container {
+  padding-left: 20px;
+  margin: 0 auto;
+  max-width: 1300px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 26px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+/* ====== NAVIGACE ====== */
+.navbar {
+  width: 100%;
+  padding: 15px 10px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-container {
+  width: 100%;
+  max-width: 1300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  margin-right: 10px;
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: translateY(-3px);
+}
+
+/* Navigace vpravo (mobile default = hamburger only) */
+.nav-right {
+  display: flex;
+  align-items: center;
+}
+
+.nav-right>* {
+  display: none;
+  /* defaultně skryté na mobilech */
+}
+
+/* Hambuger menu (mobile first – viditelné defaultně) */
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  color: var(--color-text);
+  display: block;
+}
+
+/* Mobilní menu */
+.mobile-menu {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  background: #f2f2f2;
+  position: absolute;
+  top: 60px;
+  right: 20px;
+  width: 200px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  z-index: 100;
+}
+
+.mobile-menu>* {
+  display: block;
+  padding: 10px 20px;
+  color: var(--color-text);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.mobile-menu>*:hover {
+  color: var(--color-1.5secondary);
+}
+
+
+
+/* ====== FOOTER ====== */
+
+.footer {
+  padding: 50px 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+
+}
+
+.gridHP {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.grid-left,
+.grid-right {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.footer-textwrap {
+  margin-bottom: 1rem;
+}
+
+.footerth2 {
+  margin-bottom: 0.5rem;
+}
+
+.footer-text {
+  font-size: 1rem;
+}
+
+.footer-detail {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.footer-detail img {
+  margin-right: 0.8rem;
+}
+
+.footer-detail a {
+  color: var(--color-text);
+  text-decoration: none;
+  transition: color 0.3s ease;
+  transition: transform 0.2s ease;
+}
+
+.footer-detail a:hover {
+  color: var(--color-secondary);
+  transform: translateY(-3px);
+}
+
+.contact-icons img {
+  margin-top: 1rem;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.contact-icons img:hover {
+  transform: scale(1.1);
+}
+
+
+.grid-right {
+  align-items: center;
+  gap: 1rem;
+}
+
+
+.logo {
+  transition: transform 0.2s ease;
+}
+
+.logo:hover {
+  transform: translateY(-3px);
+}
+
+.pav {
+  max-height: 120px;
+}
+
+
+/* ============ DESKTOP VIEW (768px+) ============ */
+@media (min-width: 768px) {
+  body {
+    font-size: 18px;
+  }
+
+  .hamburger {
+    display: none;
+  }
+
+  h1 {
+    font-size: 42px;
+  }
+
+  h2 {
+    font-size: 32px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .nav-right>* {
+    display: inline-block;
+    color: var(--color-text);
+    text-decoration: none;
+    margin-left: 20px;
+    padding: 10px;
+    transition: color 0.3s ease, transform 0.2s ease;
+  }
+
+  .nav-right>*:hover {
+    color: var(--color-secondary);
+    transform: translateY(-3px);
+  }
+
+  .gridHP {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+  }
+
+  .grid-left,
+  .grid-right {
+    flex: 1;
+  }
+
+  .grid-left {
+    align-items: flex-start;
+  }
+
+}
