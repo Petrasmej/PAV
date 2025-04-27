@@ -33,9 +33,9 @@ const Navigation = () => {
 
         {!isMobile && (
           <nav className="nav-right">
-            <Link to="/#">Our Services</Link>
-            <Link to="/#">Our Experience</Link>
-            <a href="#kontakt">Contact</a>
+            <a href="#services-id">Our Services</a>
+            <a href="#experience-id">Our Experience</a>
+            <a href="#contact">Contact</a>
             <Link to="/">
               <img
                 src="/flagCZ.png"
@@ -61,12 +61,12 @@ const Navigation = () => {
       {/* Dropdown menu pro mobilní verzi */}
       {isOpen && isMobile && (
         <nav className="mobile-menu">
-          <Link to="/#" onClick={() => setIsOpen(false)}>
+          <a href="#services-id" onClick={() => setIsOpen(false)}>
             Our Services
-          </Link>
-          <Link to="/#" onClick={() => setIsOpen(false)}>
+          </a>
+          <a href="#experience-id" onClick={() => setIsOpen(false)}>
             Our Experience
-          </Link>
+          </a>
           <a href="#kontakt" onClick={() => setIsOpen(false)}>
             Contact
           </a>

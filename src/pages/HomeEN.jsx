@@ -51,7 +51,7 @@ const HomeEN = () => {
           </div>
         </div>
       </section>
-      <section className="nabidka">
+      <section className="nabidka" id="services-id">
         <div className="container">
           <div className="uvod-wrap">
             <h2 className="uvod-h2">Our services</h2>
@@ -153,9 +153,11 @@ const HomeEN = () => {
                 </div>
               </div>
               <div className="button-wrapper">
-                <button className="button-primary">
-                  Book a consultation today
-                </button>
+                <a href="#contact">
+                  <button className="button-primary">
+                    Book a consultation today
+                  </button>
+                </a>
               </div>
             </div>
             <div className="grid-right">
@@ -172,7 +174,7 @@ const HomeEN = () => {
           </div>
         </div>
       </section>
-      <section className="zkusenosti">
+      <section className="zkusenosti" id="experience-id">
         <div className="container">
           <div className="uvod-wrap">
             <h2 className="uvod-h2">Our Experience</h2>
@@ -223,7 +225,9 @@ const HomeEN = () => {
           <div className="grid-rightCTA">
             <div className="cta-wrap">
               <h2 className="konference">Let’s plan your event together.</h2>
-              <button className="button-primary">Contact us</button>
+              <a href="#contact">
+                <button className="button-primary">Contact us</button>
+              </a>
             </div>
           </div>
         </div>

@@ -33,8 +33,8 @@ const Navigace = () => {
 
         {!isMobile && (
           <nav className="nav-right">
-            <Link to="/#">Co nabízíme</Link>
-            <Link to="/#">Naše zkušenosti</Link>
+            <a href="#nabidka-id">Co nabízíme</a>
+            <a href="#zkusenosti-id">Naše zkušenosti</a>
             <a href="#kontakt">Kontakt</a>
             <Link to="/en">
               <img
@@ -60,13 +60,13 @@ const Navigace = () => {
       {/* Dropdown menu pro mobilní verzi */}
       {isOpen && isMobile && (
         <nav className="mobile-menu">
-          <Link to="/" onClick={() => setIsOpen(false)}>
+          <a href="#nabidka-id" onClick={() => setIsOpen(false)}>
             Co nabízíme
-          </Link>
-          <Link to="/" onClick={() => setIsOpen(false)}>
+          </a>
+          <a href="#zkusenosti-id" onClick={() => setIsOpen(false)}>
             Naše zkušenosti
-          </Link>
-          <a href="/" onClick={() => setIsOpen(false)}>
+          </a>
+          <a href="#kontakt" onClick={() => setIsOpen(false)}>
             Kontakt
           </a>
           <Link to="/en">

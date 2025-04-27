@@ -6,7 +6,7 @@ import fbImg from '../assets/fb.svg';
 const Contact = () => {
   return (
     <>
-      <div className="footer">
+      <div className="footer" id="contact">
         <div className="gridHP">
           <div className="grid-left">
             <div className="footer-textwrap">

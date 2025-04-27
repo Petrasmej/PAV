@@ -50,7 +50,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="nabidka">
+      <section className="nabidka" id="nabidka-id">
         <div className="container">
           <div className="uvod-wrap">
             <h2 className="uvod-h2">Co nabízíme</h2>
@@ -146,9 +146,11 @@ const Home = () => {
                 </div>
               </div>
               <div className="button-wrapper">
-                <button className="button-primary">
-                  Domluvte si konzultaci
-                </button>
+                <a href="#kontakt">
+                  <button className="button-primary">
+                    Domluvte si konzultaci
+                  </button>
+                </a>
               </div>
             </div>
             <div className="grid-right">
@@ -165,7 +167,7 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <section className="zkusenosti">
+      <section className="zkusenosti" id="zkusenosti-id">
         <div className="container">
           <div className="uvod-wrap">
             <h2 className="uvod-h2">Naše zkušenosti</h2>
@@ -217,7 +219,9 @@ const Home = () => {
               <h2 className="konference">
                 Pojďme naplánovat Váš event společně.
               </h2>
-              <button className="button-primary">Kontaktujte nás</button>
+              <a href="#kontakt">
+                <button className="button-primary">Kontaktujte nás</button>
+              </a>
             </div>
           </div>
         </div>
