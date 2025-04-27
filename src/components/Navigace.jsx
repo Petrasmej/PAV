@@ -38,7 +38,7 @@ const Navigace = () => {
             <a href="#kontakt">Kontakt</a>
             <Link to="/en">
               <img
-                src="/public/flagEN.png"
+                src="/flagEN.png"
                 alt="English"
                 height="22"
                 className="flagEN"
@@ -70,7 +70,7 @@ const Navigace = () => {
             Kontakt
           </a>
           <Link to="/en">
-            <img src="/public/flagEN.png" alt="English" className="flagEN" />
+            <img src="/flagEN.png" alt="English" className="flagEN" />
           </Link>
         </nav>
       )}

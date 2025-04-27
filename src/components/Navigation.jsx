@@ -71,7 +71,7 @@ const Navigation = () => {
             Contact
           </a>
           <Link to="/">
-            <img src="/public/flagCZ.png" alt="Čeština" className="flagCZ" />
+            <img src="/flagCZ.png" alt="Čeština" className="flagCZ" />
           </Link>
         </nav>
       )}
