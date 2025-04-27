@@ -7,8 +7,11 @@
   --gradient: linear-gradient(to bottom, var(--color-secondary), var(--color-primary));
 }
 
-html {
+html,
+body {
   width: 100%;
+  overflow-x: hidden;
+  /* Zakáže horizontální posouvání */
 }
 
 body {
@@ -22,7 +25,6 @@ body {
 }
 
 .container {
-  padding-left: 20px;
   margin: 0 auto;
   max-width: 1300px;
 }
@@ -135,7 +137,7 @@ h3 {
 .gridHP {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 50px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -146,6 +148,7 @@ h3 {
   flex-direction: column;
   align-items: flex-start;
 }
+
 
 .footer-textwrap {
   margin-bottom: 1rem;
@@ -160,7 +163,13 @@ h3 {
   display: flex;
   align-items: center;
   margin-bottom: 1rem;
+  transition: transform 0.2s ease;
 }
+
+.footer-detail:hover {
+  transform: translateY(-3px);
+}
+
 
 .footer-detail img {
   margin-right: 0.8rem;
@@ -170,7 +179,7 @@ h3 {
   color: var(--color-text);
   text-decoration: none;
   transition: color 0.3s ease;
-  transition: transform 0.2s ease;
+
 }
 
 .footer-detail a:hover {
@@ -185,13 +194,12 @@ h3 {
 }
 
 .contact-icons img:hover {
-  transform: scale(1.1);
+  transform: translateY(-3px);
 }
 
 
 .grid-right {
   align-items: center;
-  gap: 1rem;
 }
 
 
@@ -212,6 +220,10 @@ h3 {
 @media (min-width: 768px) {
   body {
     font-size: 18px;
+  }
+
+  .container {
+    margin-bottom: 0;
   }
 
   .hamburger {
@@ -249,7 +261,10 @@ h3 {
     justify-content: space-between;
     align-items: center;
     padding: 0 2rem;
+    gap: 40px;
+    margin: 60px auto;
   }
+
 
   .grid-left,
   .grid-right {
@@ -258,6 +273,15 @@ h3 {
 
   .grid-left {
     align-items: flex-start;
+  }
+
+  .footer-GR {
+    flex: 1;
+    display: flex;
+    height: auto;
+    align-items: flex-end;
+    justify-content: center;
+    margin-top: 70px;
   }
 
 }

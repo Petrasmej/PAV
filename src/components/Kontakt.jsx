@@ -37,7 +37,7 @@ const Kontakt = () => {
               <img src={fbImg} alt="facebook" height="40" className="fb" />
             </div>
           </div>
-          <div className="grid-right">
+          <div className="footer-GR">
             <div className="footer-logos">
               <form action="mailto:info@pavconference.cz" method="POST">
                 <label for="name">Jméno:</label>

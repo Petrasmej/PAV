@@ -1,5 +1,3 @@
-/* ========= HOME.CSS ========= */
-
 /* === Hero sekce === */
 .hero {
   background: var(--color-primary);
@@ -17,7 +15,7 @@
 
 /* === Nabídka sekce === */
 .nabidka {
-  padding: 50px 20px;
+  padding: 50px 20px 0px 20px;
 }
 
 .uvod-wrap {
@@ -63,13 +61,6 @@
   color: var(--color-text);
 }
 
-/* === Grid s body === */
-.gridHP {
-  display: flex;
-  flex-direction: column;
-  gap: 25px;
-}
-
 .points {
   display: flex;
   align-items: flex-start;
@@ -104,30 +95,50 @@
   font-weight: 600;
   cursor: pointer;
   transition: background-color 0.3s ease;
+  transition: transform 0.2s ease;
 }
 
 .button-primary:hover {
-  background: #0d2a50;
+  background: var(--color-primary);
+  transform: translateY(-3px);
 }
 
 
 .picsHome {
   width: 100%;
   border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 14px rgba(0, 0, 0, 0.15);
   opacity: 1;
   transform: none;
   transition: none;
 }
 
+.pic1,
+.pic2 {
+  display: none;
+  /* Skrytí prvních dvou obrázků na mobilu */
+}
+
+.pic3 {
+  width: 100vw;
+  height: auto;
+  object-fit: cover;
+  margin-left: 0;
+  margin-right: 0;
+  display: block;
+  border-radius: 0px;
+}
 
 /* === Sekce Zkušenosti === */
 .zkusenosti {
-  padding: 50px 20px;
+  padding: 50px 20px 0 20px;
 }
 
 .quote-wrap {
   margin: 30px 0;
+  display: flex;
+  align-items: start;
+  gap: 20px;
 }
 
 .quoteMarks {
@@ -147,6 +158,7 @@
 
 .zkusenostiPic {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
   transition: all .2s;
@@ -163,18 +175,40 @@
   transform: scale(.95);
 }
 
+.grid-centre {
+  text-align: center;
+  flex: 1;
+}
+
 
 /* === CTA sekce === */
 .CTA {
   background: var(--color-primary);
+  margin-top: 100px;
+  margin-bottom: 50px;
   color: white;
-  padding: 50px 20px;
+  padding: 0;
 }
 
-.cta-wrap {
+.gridCTA {
+  display: block;
+}
+
+.ctaPic {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.grid-rightCTA {
+  padding: 20px 20px 20px 40px;
+  height: 200px;
   display: flex;
-  flex-direction: column;
-  gap: 20px;
+  align-items: center;
+}
+
+.konference {
+  margin-top: 0;
 }
 
 
@@ -184,33 +218,18 @@
 /* ========================================= */
 @media (min-width: 768px) {
 
-
-
+  .nabidka {
+    padding: 100px 40px 0px 40px;
+  }
 
   .cards {
     flex-direction: row;
     gap: 30px;
+    margin: 80px auto 100px auto;
   }
 
   .card {
     flex: 1;
-  }
-
-  .gridHP {
-    flex-direction: row;
-    justify-content: space-between;
-    gap: 40px;
-  }
-
-  .grid-left,
-  .grid-right {
-    flex: 1;
-  }
-
-  .quote-wrap {
-    display: flex;
-    align-items: center;
-    gap: 20px;
   }
 
   .pictures-wrapper {
@@ -220,6 +239,7 @@
     /* <<< důležité */
 
   }
+
 
   .picsHome {
     max-width: 55%;
@@ -231,6 +251,13 @@
     /* ➡️ větší počáteční odskok */
     transition: all 1.2s cubic-bezier(0.25, 1, 0.5, 1);
     /* ➡️ plynulejší, elegantní */
+  }
+
+  .pic1,
+  .pic2,
+  .pic3 {
+    display: block;
+
   }
 
   .pic1 {
@@ -246,7 +273,10 @@
   .pic3 {
     left: 2rem;
     top: 15rem;
+    border-radius: 8px;
   }
+
+
 
   /* === Finální stav po scrollu === */
   .pictures-wrapper.visible .pic1 {
@@ -270,19 +300,42 @@
     /* třetí obrázek naposledy */
   }
 
+  .zkusenosti {
+    padding: 100px 40px 0px 40px;
+  }
 
   .zkusenostiPic {
     max-width: 500px;
   }
 
+  .quote-wrap {
+    margin-top: 60px;
+  }
+
+  .gridCTA {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .grid-leftCTA {
+    width: 100%;
+  }
+
   .ctaPic {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+  }
+
+  .grid-rightCTA {
+    padding: 20px 20px 20px 40px;
+    height: auto;
+    display: flex;
+    align-items: center;
   }
 
   .cta-wrap {
-    align-items: flex-end;
-    text-align: right;
+    align-items: flex-start;
+    text-align: left;
   }
 }

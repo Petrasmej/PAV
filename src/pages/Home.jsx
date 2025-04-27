@@ -167,7 +167,7 @@ const Home = () => {
       <section className="zkusenosti">
         <div className="container">
           <div className="uvod-wrap">
-            <h2 className="uvod-h2">Co nabízíme</h2>
+            <h2 className="uvod-h2">Naše zkušenosti</h2>
             <p className="uvod-text">
               Důvěřují nám vědecké instituce, univerzity i nadnárodní firmy.
               Více než 10 let organizujeme špičkové mezinárodní kongresy a
@@ -187,7 +187,7 @@ const Home = () => {
             </div>
           </div>
           <div className="gridHP">
-            <div className="grid-left">
+            <div className="grid-centre">
               <img
                 className="zkusenostiPic"
                 src={concertImg}
@@ -207,11 +207,11 @@ const Home = () => {
         </div>
       </section>
       <section className="CTA">
-        <div className="gridHP">
-          <div className="grid-left">
+        <div className="gridCTA">
+          <div className="grid-leftCTA">
             <img className="ctaPic" src={audienceImg} alt="audience"></img>
           </div>
-          <div className="grid-right">
+          <div className="grid-rightCTA">
             <div className="cta-wrap">
               <h2 className="konference">
                 Pojďme naplánovat Váš event společně.

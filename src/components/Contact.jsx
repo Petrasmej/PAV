@@ -2,7 +2,6 @@ import logoImg from '../assets/logo.svg';
 import emailImg from '../assets/email.svg';
 import phoneImg from '../assets/phone.svg';
 import fbImg from '../assets/fb.svg';
-import pavImg from '../assets/pav.png';
 
 const Contact = () => {
   return (
@@ -35,7 +34,7 @@ const Contact = () => {
               <img src={fbImg} alt="facebook" height="40" className="fb" />
             </div>
           </div>
-          <div className="grid-right">
+          <div className="footer-GR">
             <div className="footer-logos">
               <form action="mailto:info@pavconference.cz" method="POST">
                 <label for="name">Name:</label>
