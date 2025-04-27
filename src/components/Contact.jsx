@@ -29,15 +29,42 @@ const Contact = () => {
               </p>
             </div>
             <div className="contact-icons">
+              <a href="/" className="footer-logo">
+                <img src={logoImg} alt="Logo" height="60" className="logo" />
+              </a>
               <img src={fbImg} alt="facebook" height="40" className="fb" />
             </div>
           </div>
           <div className="grid-right">
             <div className="footer-logos">
-              <a href="/" className="footer-logo">
-                <img src={logoImg} alt="Logo" height="60" className="logo" />
-              </a>
-              <img src={pavImg} alt="páv" height="120" className="pav" />
+              <form action="mailto:info@pavconference.cz" method="POST">
+                <label for="name">Name:</label>
+                <br />
+                <input type="text" id="name" name="Jméno" required />
+                <br />
+                <br />
+
+                <label for="email">E-mail:</label>
+                <br />
+                <input type="email" id="email" name="Email" required />
+                <br />
+                <br />
+
+                <label for="message">Message us:</label>
+                <br />
+                <textarea
+                  id="message"
+                  name="Zpráva"
+                  rows="5"
+                  required
+                ></textarea>
+                <br />
+                <br />
+
+                <button className="button-primary" type="submit">
+                  Send
+                </button>
+              </form>
             </div>
           </div>
         </div>

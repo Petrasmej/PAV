@@ -1,11 +1,35 @@
 import { Helmet } from 'react-helmet';
+import { useEffect } from 'react';
 import Navigace from '../components/Navigace';
 import Kontakt from '../components/Kontakt';
 import './Home.css';
 import LineImg from '../assets/line.svg';
 import QuotesImg from '../assets/quotes.svg';
+import chairImg from '../assets/chair.jpg';
+import AVImg from '../assets/AV.jpg';
+import speakerImg from '../assets/speaker.jpg';
+import concertImg from '../assets/concert.jpg';
+import meetingImg from '../assets/meeting.jpg';
+import audienceImg from '../assets/audience.jpg';
 
 const Home = () => {
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      },
+      { threshold: 0.5 },
+    );
+
+    const el = document.getElementById('stack-trigger');
+    if (el) observer.observe(el);
+    return () => {
+      if (el) observer.unobserve(el);
+    };
+  }, []);
+
   return (
     <>
       <Helmet>
@@ -31,9 +55,9 @@ const Home = () => {
           <div className="uvod-wrap">
             <h2 className="uvod-h2">Co nabízíme</h2>
             <p className="uvod-text">
-              S důrazem na detail, osobní přístup a více než 10 let zkušeností
-              se postaráme se o každý detail, abyste se mohli soustředit na to
-              podstatné – obsah a hosty.
+              S důrazem na detail, osobním přístupem a více než 10 let
+              zkušeností se postaráme o každý detail, abyste se mohli soustředit
+              na to podstatné – obsah a hosty.
             </p>
           </div>
           <div className="cards">
@@ -127,7 +151,15 @@ const Home = () => {
               </div>
             </div>
             <div className="grid-right">
-              <div className="pictures-wrapper"></div>
+              <div className="pictures-wrapper" id="stack-trigger">
+                <img className="picsHome pic1" src={chairImg} alt="chair"></img>
+                <img className="picsHome pic2" src={AVImg} alt="AV"></img>
+                <img
+                  className="picsHome pic3"
+                  src={speakerImg}
+                  alt="speaker"
+                ></img>
+              </div>
             </div>
           </div>
         </div>
@@ -156,11 +188,19 @@ const Home = () => {
           </div>
           <div className="gridHP">
             <div className="grid-left">
-              <img className="koncert"></img>
+              <img
+                className="zkusenostiPic"
+                src={concertImg}
+                alt="concert"
+              ></img>
               <h3 className="h3option">Koncerty</h3>
             </div>
             <div className="grid-right">
-              <img className="konference"></img>
+              <img
+                className="zkusenostiPic"
+                src={meetingImg}
+                alt="meeting"
+              ></img>
               <h3 className="h3option">Konference a workshopy</h3>
             </div>
           </div>
@@ -169,7 +209,7 @@ const Home = () => {
       <section className="CTA">
         <div className="gridHP">
           <div className="grid-left">
-            <img className="koncert"></img>
+            <img className="ctaPic" src={audienceImg} alt="audience"></img>
           </div>
           <div className="grid-right">
             <div className="cta-wrap">
