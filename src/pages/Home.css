@@ -73,7 +73,7 @@
 }
 
 .line img {
-  width: 4px;
+  width: 2px;
 }
 
 .point-text {
@@ -238,6 +238,9 @@
 
   }
 
+  .line img {
+    width: 3px;
+  }
 
   .picsHome {
     max-width: 55%;

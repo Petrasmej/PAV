@@ -13,7 +13,7 @@ const Kontakt = () => {
               <h2 className="footerh2">Kontakt</h2>
 
               <h3 className="footer-text">
-                Chcete probrat váš kongres? Ozvěte se nám.
+                Chcete probrat Váš kongres? Ozvěte se nám.
               </h3>
             </div>
 

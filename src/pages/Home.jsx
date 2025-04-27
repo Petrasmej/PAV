@@ -55,7 +55,7 @@ const Home = () => {
           <div className="uvod-wrap">
             <h2 className="uvod-h2">Co nabízíme</h2>
             <p className="uvod-text">
-              S důrazem na detail, osobním přístupem a více než 10 let
+              S důrazem na detail, osobním přístupem a více než 10 lety
               zkušeností se postaráme o každý detail, abyste se mohli soustředit
               na to podstatné – obsah a hosty.
             </p>
@@ -66,15 +66,16 @@ const Home = () => {
                 Komplexní organizace konferencí i eventů
               </h3>
               <p className="card-text">
-                Projektové řízení od návrhu po realizaci. O vše se postaráme.
+                Projektové řízení od návrhu po realizaci.
+                <br />O vše se postaráme.
               </p>
             </div>
             <div className="card">
               <h3 className="card-h3">Tvoříme na míru</h3>
               <p className="card-text">
-                Každý projekt vzniká v úzké spolupráci s Vámi – nasloucháme,
-                navrhujeme a přizpůsobujeme. S respektem k Vašemu oboru i
-                publiku.
+                Každý projekt vzniká v úzké spolupráci <br />s Vámi –
+                nasloucháme, navrhujeme a přizpůsobujeme. S respektem k Vašemu
+                oboru i publiku.
               </p>
             </div>
             <div className="card">
@@ -140,7 +141,7 @@ const Home = () => {
                     <img src={LineImg} alt="Line" />
                   </div>
                   <p className="point-text">
-                    Vaši událost proměníme v příběh, který mluví za vás.
+                    Vaši událost proměníme v příběh, který mluví za Vás.
                   </p>
                 </div>
               </div>
