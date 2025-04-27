@@ -220,7 +220,9 @@ const Home = () => {
                 Pojďme naplánovat Váš event společně.
               </h2>
               <a href="#kontakt">
-                <button className="button-primary">Kontaktujte nás</button>
+                <button className="button-primary CTAbutton">
+                  Kontaktujte nás
+                </button>
               </a>
             </div>
           </div>

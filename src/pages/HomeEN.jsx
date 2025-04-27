@@ -226,7 +226,7 @@ const HomeEN = () => {
             <div className="cta-wrap">
               <h2 className="konference">Let’s plan your event together.</h2>
               <a href="#contact">
-                <button className="button-primary">Contact us</button>
+                <button className="button-primary CTAbutton">Contact us</button>
               </a>
             </div>
           </div>
