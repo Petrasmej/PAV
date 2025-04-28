@@ -73,6 +73,10 @@ h3 {
   transform: translateY(-3px);
 }
 
+.pav {
+  margin-bottom: 6px;
+}
+
 /* Navigace vpravo (mobile default = hamburger only) */
 .nav-right {
   display: flex;
@@ -212,8 +216,10 @@ h3 {
 
 }
 
-.pav {
-  max-height: 120px;
+
+
+.fb {
+  margin-bottom: 16px;
 }
 
 
@@ -282,7 +288,7 @@ h3 {
     height: auto;
     align-items: flex-end;
     justify-content: center;
-    margin-top: 70px;
+    margin-top: 60px;
   }
 
 }

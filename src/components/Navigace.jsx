@@ -26,7 +26,7 @@ const Navigace = () => {
       <div className="navbar-container">
         <div className="nav-left">
           <a href="/" className="nav-logo">
-            <img src={logoImg} alt="Logo" height="60" className="logo" />
+            <img src={logoImg} alt="Logo" height="80" className="logo" />
           </a>
           <img src={pavImg} alt="páv" height="80" className="pav" />
         </div>

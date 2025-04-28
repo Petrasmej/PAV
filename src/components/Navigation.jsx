@@ -26,7 +26,7 @@ const Navigation = () => {
       <div className="navbar-container">
         <div className="nav-left">
           <a href="/en" className="nav-logo">
-            <img src={logoImg} alt="Logo" height="60" className="logo" />
+            <img src={logoImg} alt="Logo" height="80" className="logo" />
             <img src={pavImg} alt="páv" height="80" className="pav" />
           </a>
         </div>

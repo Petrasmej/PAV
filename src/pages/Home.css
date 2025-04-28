@@ -1,9 +1,8 @@
 /* === Hero sekce === */
 .hero {
   background: var(--color-primary);
-  height: auto;
   color: white;
-  height: 20vh;
+  min-height: 20vh;
   padding: 60px 20px;
   text-align: center;
 }

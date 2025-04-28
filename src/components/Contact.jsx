@@ -29,7 +29,7 @@ const Contact = () => {
             </div>
             <div className="contact-icons">
               <a href="/" className="footer-logo">
-                <img src={logoImg} alt="Logo" height="60" className="logo" />
+                <img src={logoImg} alt="Logo" height="80" className="logo" />
               </a>
               <img src={fbImg} alt="facebook" height="40" className="fb" />
             </div>
