@@ -10,8 +10,6 @@
 
 .hero-grid {
   display: block;
-
-  padding: 1rem 2rem 2rem 2rem;
 }
 
 .hero-image img {
@@ -24,6 +22,7 @@
 .hero-text h1 {
   font-weight: bold;
   margin: 0;
+  padding: 0 20px 50px 20px;
 }
 
 /* === Nabídka sekce === */
@@ -240,6 +239,10 @@
     align-items: center;
     gap: 2rem;
     padding: 1rem 2rem;
+  }
+
+  .hero-text h1 {
+    padding: 0;
   }
 
   .nabidka {
