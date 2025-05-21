@@ -11,6 +11,7 @@ import speakerImg from '../assets/speaker.jpg';
 import concertImg from '../assets/concert.jpg';
 import meetingImg from '../assets/meeting.jpg';
 import audienceImg from '../assets/audience.jpg';
+import heroImg from '../assets/hero.png';
 
 const Home = () => {
   useEffect(() => {
@@ -45,8 +46,13 @@ const Home = () => {
       <Navigace />
       <section className="hero">
         <div className="container">
-          <div className="hero-text">
-            <h1>Váš partner pro mezinárodní konference a eventy</h1>
+          <div className="hero-grid">
+            <div className="hero-image">
+              <img src={heroImg} alt="Konference" />
+            </div>
+            <div className="hero-text">
+              <h1>Váš partner pro mezinárodní konference a eventy</h1>
+            </div>
           </div>
         </div>
       </section>

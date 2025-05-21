@@ -3,14 +3,27 @@
   background: var(--color-primary);
   color: white;
   min-height: 20vh;
-  padding: 60px 20px;
+
   text-align: center;
 }
 
-.hero-text h1 {
 
-  margin: 0 auto;
-  max-width: 90%;
+.hero-grid {
+  display: block;
+
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.hero-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.hero-text h1 {
+  font-weight: bold;
+  margin: 0;
 }
 
 /* === Nabídka sekce === */
@@ -220,6 +233,14 @@
 /* ========== MEDIA QUERY DESKTOP ========= */
 /* ========================================= */
 @media (min-width: 768px) {
+
+  .hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem 2rem;
+  }
 
   .nabidka {
     padding: 100px 40px 0px 40px;
